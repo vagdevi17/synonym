@@ -24,7 +24,7 @@ tinymce.PluginManager.add('synonym', function(editor, url) {
       }
     };
     var cleansedSearchTerm = searchTerm.replace(' ','+');
-    var endPoint = 'https://api.datamuse.com//words?ml='+cleansedSearchTerm;
+    var endPoint = "https://api.datamuse.com//words?ml=" + cleansedSearchTerm;
     xhttp.open("GET", endPoint, true);
     xhttp.send();
   };
